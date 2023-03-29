@@ -1,0 +1,15 @@
+E:\Ventoy(1)\Ventoy2Disk\SendTest\bin\Debug\net6.0\SendTest.exe
+E:\Ventoy(1)\Ventoy2Disk\SendTest\bin\Debug\net6.0\SendTest.deps.json
+E:\Ventoy(1)\Ventoy2Disk\SendTest\bin\Debug\net6.0\SendTest.runtimeconfig.json
+E:\Ventoy(1)\Ventoy2Disk\SendTest\bin\Debug\net6.0\SendTest.dll
+E:\Ventoy(1)\Ventoy2Disk\SendTest\bin\Debug\net6.0\SendTest.pdb
+E:\Ventoy(1)\Ventoy2Disk\SendTest\obj\Debug\net6.0\SendTest.csproj.AssemblyReference.cache
+E:\Ventoy(1)\Ventoy2Disk\SendTest\obj\Debug\net6.0\SendTest.GeneratedMSBuildEditorConfig.editorconfig
+E:\Ventoy(1)\Ventoy2Disk\SendTest\obj\Debug\net6.0\SendTest.AssemblyInfoInputs.cache
+E:\Ventoy(1)\Ventoy2Disk\SendTest\obj\Debug\net6.0\SendTest.AssemblyInfo.cs
+E:\Ventoy(1)\Ventoy2Disk\SendTest\obj\Debug\net6.0\SendTest.csproj.CoreCompileInputs.cache
+E:\Ventoy(1)\Ventoy2Disk\SendTest\obj\Debug\net6.0\SendTest.dll
+E:\Ventoy(1)\Ventoy2Disk\SendTest\obj\Debug\net6.0\refint\SendTest.dll
+E:\Ventoy(1)\Ventoy2Disk\SendTest\obj\Debug\net6.0\SendTest.pdb
+E:\Ventoy(1)\Ventoy2Disk\SendTest\obj\Debug\net6.0\SendTest.genruntimeconfig.cache
+E:\Ventoy(1)\Ventoy2Disk\SendTest\obj\Debug\net6.0\ref\SendTest.dll

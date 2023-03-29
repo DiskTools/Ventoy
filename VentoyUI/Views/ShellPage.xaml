@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="VentoyUI.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VentoyUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:windowex="using:WinUIEx"
+    Background="{ThemeResource SolidBackgroundFillColorBaseBrush}"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ContentArea">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="48"/>
+        </Grid.RowDefinitions>
+        <Frame x:Name="Pages" Grid.Row="0"/>
+        <Grid Grid.Row="1"  Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}">
+            <Grid VerticalAlignment="Bottom" Height="48" Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Stretch">
+                        <CommandBar HorizontalContentAlignment="Stretch" VerticalAlignment="Top" x:Name="Commands" IsOpen="false" Background="Transparent" DefaultLabelPosition="Right">
+                            <AppBarButton HorizontalAlignment="Left" Icon="Play" Label="Install" x:Name="StartInstall" x:Uid="StartInstall" Click="StartInstall_Click" />
+                            <AppBarButton Icon="Clock" x:Name="Update" x:Uid="Update" Label="Update" Click="Update_Click"/>
+                        </CommandBar>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <ProgressBar VerticalAlignment="Center" Maximum="800" Value="500"/>
+                </Grid>
+
+                <!--设置右对齐-->
+                <Grid Grid.Column="2">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                        <CommandBar HorizontalContentAlignment="Right" VerticalAlignment="Top" x:Name="Commands3" IsOpen="false" Background="Transparent" DefaultLabelPosition="Right">
+                            <AppBarSeparator/>
+                            <AppBarButton Icon="Setting" x:Name="Setting3" Label="Settings" x:Uid="Setting3" Click="Setting_Click"/>
+                        </CommandBar>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+            <!--安装、更新、进度条左对齐-->
+        </Grid>
+    </Grid>
+</Page>

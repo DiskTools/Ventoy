@@ -1,0 +1,1283 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"wlpBuffer\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 7,
+                  "endLine": 94,
+                  "endColumn": 83
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetSystemDirectoryU",
+                  "decoratedName": "GetSystemDirectoryU",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 89,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 89,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 91,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 92,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是对“GetSystemDirectoryW”的输入(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\sysinfoapi.h:246 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 93,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是对“WideCharToMultiByte”的输入(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\stringapiset.h:134 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”不应为 NULL，因为这与“WideCharToMultiByte”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"wlpBuffer\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                },
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 2,
+                  "endLine": 128,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LoadStringU",
+                  "decoratedName": "LoadStringU",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 119,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 120,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 121,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是“LoadStringW”的输入/输出参数(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\libloaderapi.h:416 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”不应为 NULL，因为这与“LoadStringW”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"wlpBuffer\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                },
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 7,
+                  "endLine": 130,
+                  "endColumn": 87
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LoadStringU",
+                  "decoratedName": "LoadStringU",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 119,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 120,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 121,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是“LoadStringW”的输入/输出参数(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\libloaderapi.h:416 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 129,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 130,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是对“WideCharToMultiByte”的输入(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\stringapiset.h:134 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 130,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 130,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”不应为 NULL，因为这与“WideCharToMultiByte”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"wlpBuffer\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                },
+                "region": {
+                  "startLine": 224,
+                  "startColumn": 7,
+                  "endLine": 224,
+                  "endColumn": 83
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetSystemWindowsDirectoryU",
+                  "decoratedName": "GetSystemWindowsDirectoryU",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 219,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 219,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 221,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 222,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是对“GetSystemWindowsDirectoryW”的输入(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\sysinfoapi.h:306 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 223,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 224,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是对“WideCharToMultiByte”的输入(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\stringapiset.h:134 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 224,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 224,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”不应为 NULL，因为这与“WideCharToMultiByte”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"wlpString\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                },
+                "region": {
+                  "startLine": 418,
+                  "startColumn": 2,
+                  "endLine": 418,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetWindowTextU",
+                  "decoratedName": "GetWindowTextU",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 409,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 410,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 411,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 414,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 417,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpString”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 418,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpString”不应为 NULL，因为这与“GetWindowTextW”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"wlpString\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                },
+                "region": {
+                  "startLine": 421,
+                  "startColumn": 7,
+                  "endLine": 421,
+                  "endColumn": 87
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetWindowTextU",
+                  "decoratedName": "GetWindowTextU",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 409,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 410,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 411,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 414,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 417,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpString”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 418,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpString”是“GetWindowTextW”的输入/输出参数(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\winuser.h:8931 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 419,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 421,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpString”是对“WideCharToMultiByte”的输入(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\stringapiset.h:134 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 421,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 421,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpString”不应为 NULL，因为这与“WideCharToMultiByte”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“lpString”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                },
+                "region": {
+                  "startLine": 425,
+                  "startColumn": 2,
+                  "endLine": 425,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetWindowTextU",
+                  "decoratedName": "GetWindowTextU",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 409,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 410,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 411,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 414,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "“lpString”可能为 NULL (跳过此分支)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 417,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 418,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 419,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 421,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 424,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“wlpString!=(((void *)0))”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+                          },
+                          "region": {
+                            "startLine": 425,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“lpString”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31933.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/AlertSuppress.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "758b8a3613004c03eef09b3c2aae8dc6d3369b4c53bc6a9c5f7f2c116ab5e04b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/ventoy2disk.h"
+          },
+          "hashes": {
+            "sha-256": "5ca7c0997c565d19789f569d0e8709324b85c73afc6449a8a56d3747f31e3eae"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\bin\x64\Debug\net6.0\VentoyUI.Core.deps.json
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\bin\x64\Debug\net6.0\VentoyUI.Core.dll
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\bin\x64\Debug\net6.0\VentoyUI.Core.pdb
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\obj\x64\Debug\net6.0\VentoyUI.Core.csproj.AssemblyReference.cache
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\obj\x64\Debug\net6.0\VentoyUI.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\obj\x64\Debug\net6.0\VentoyUI.Core.AssemblyInfoInputs.cache
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\obj\x64\Debug\net6.0\VentoyUI.Core.AssemblyInfo.cs
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\obj\x64\Debug\net6.0\VentoyUI.Core.csproj.CoreCompileInputs.cache
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\obj\x64\Debug\net6.0\VentoyUI.Core.dll
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\obj\x64\Debug\net6.0\refint\VentoyUI.Core.dll
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\obj\x64\Debug\net6.0\VentoyUI.Core.pdb
+E:\Users\Shomn\Downloads\Ventoy(1)\Ventoy(1)\VentoyUI.Core\obj\x64\Debug\net6.0\ref\VentoyUI.Core.dll

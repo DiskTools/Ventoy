@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+Rr+XrfJKS20qI53lHOP59jSKZfHhSd8p7nQxur9kDAh1RIe3mD0kBosqb/rqjpeOgQqmn9Kw5CjpXgQRUXSIw==",
+  "success": true,
+  "projectFilePath": "E:\\Users\\Shomn\\Downloads\\Ventoy(1)\\Ventoy(1)\\VentoyUI.Core\\VentoyUI.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shomn\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,541 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"wlpBuffer\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                },
+                "region": {
+                  "startLine": 488,
+                  "startColumn": 2,
+                  "endLine": 488,
+                  "endColumn": 87
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FormatMessageU",
+                  "decoratedName": "FormatMessageU",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 485,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 485,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 487,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 488,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是对“FormatMessageW”的输入(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\winbase.h:2449 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 488,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”不应为 NULL，因为这与“FormatMessageW”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"_Param_(5)\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                },
+                "region": {
+                  "startLine": 488,
+                  "startColumn": 2,
+                  "endLine": 488,
+                  "endColumn": 87
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FormatMessageU",
+                  "decoratedName": "FormatMessageU",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 485,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 485,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 487,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 488,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是对“FormatMessageW”的输入(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\winbase.h:2449 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 488,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”不应为 NULL，因为这与“FormatMessageW”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"wlpBuffer\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                },
+                "region": {
+                  "startLine": 490,
+                  "startColumn": 7,
+                  "endLine": 490,
+                  "endColumn": 83
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FormatMessageU",
+                  "decoratedName": "FormatMessageU",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 485,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 485,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 487,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 488,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是对“FormatMessageW”的输入(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\winbase.h:2449 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 489,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 490,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”是对“WideCharToMultiByte”的输入(在 d:\\windows kits\\10\\include\\10.0.22000.0\\um\\stringapiset.h:134 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 490,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                          },
+                          "region": {
+                            "startLine": 490,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "“wlpBuffer”不应为 NULL，因为这与“WideCharToMultiByte”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “CoInitializeEx”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                },
+                "region": {
+                  "startLine": 623,
+                  "startColumn": 5,
+                  "endLine": 623,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VDS_InitService",
+                  "decoratedName": "VDS_InitService",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “CoInitializeSecurity”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+                },
+                "region": {
+                  "startLine": 624,
+                  "startColumn": 5,
+                  "endLine": 624,
+                  "endColumn": 113
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VDS_InitService",
+                  "decoratedName": "VDS_InitService",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31933.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "c5d69b4606efd28b640d8d874d833aebb743627b79b7544044070548a8f7f594"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/ventoy2disk.h"
+          },
+          "hashes": {
+            "sha-256": "5ca7c0997c565d19789f569d0e8709324b85c73afc6449a8a56d3747f31e3eae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/diskservice.h"
+          },
+          "hashes": {
+            "sha-256": "50af326c571cb13f56869696612719f2e97a6f9c147282fd615ab9a0862b874f"
+          }
+        }
+      ]
+    }
+  ]
+}

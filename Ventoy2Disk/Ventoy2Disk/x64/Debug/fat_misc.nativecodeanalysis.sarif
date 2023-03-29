@@ -1,0 +1,97 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_misc.c"
+                },
+                "region": {
+                  "startLine": 398,
+                  "startColumn": 24,
+                  "endLine": 398,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fatfs_lfn_generate_tail",
+                  "decoratedName": "fatfs_lfn_generate_tail",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31933.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_misc.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "11a0331ee0d27621135f6bba32e8db6710da2f37c1190facd9cfa8defb71e189"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/fat_io_lib/fat_misc.h"
+          },
+          "hashes": {
+            "sha-256": "a6de0535a662c3a03be0125bceabf2b0ccc8029f02f6dd21ee2d64bed231c70d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/fat_io_lib/fat_defs.h"
+          },
+          "hashes": {
+            "sha-256": "cbe81f1b79240ed7ae8aa3ff1e96a44105f448938295ce05d923ef01c4edd0a9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/fat_io_lib/fat_opts.h"
+          },
+          "hashes": {
+            "sha-256": "009308c90f59082b07be2dd14ecdab04f0fd3873bc5f0d0721956c163fa526a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/fat_io_lib/fat_types.h"
+          },
+          "hashes": {
+            "sha-256": "65d25a3802e18b9770a26058cf8b51285b6d3b1d69368ded7bd29e489c482857"
+          }
+        }
+      ]
+    }
+  ]
+}
