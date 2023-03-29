@@ -1,0 +1,265 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“pcur”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c"
+                },
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 5,
+                  "endLine": 154,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fatfs_fat_read_sector",
+                  "decoratedName": "fatfs_fat_read_sector",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c"
+                          },
+                          "region": {
+                            "startLine": 118,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "“last”为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c"
+                          },
+                          "region": {
+                            "startLine": 119,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c"
+                          },
+                          "region": {
+                            "startLine": 122,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此循环(假定“pcur”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c"
+                          },
+                          "region": {
+                            "startLine": 144,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“pcur”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c"
+                          },
+                          "region": {
+                            "startLine": 151,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "(别名)“pcur”收到“last”的值(可能为 NULL)"
+                        }
+                      },
+                      "kinds": [
+                        "alias"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c"
+                          },
+                          "region": {
+                            "startLine": 154,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“pcur”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c"
+                },
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 48,
+                  "endLine": 146,
+                  "endColumn": 74
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fatfs_fat_read_sector",
+                  "decoratedName": "fatfs_fat_read_sector",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31933.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/down/Ventoy(1)/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "f961c3c7d009d41e0ff34d411a32123587ea490ad714bb57b357686603c9c134"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/fat_io_lib/fat_defs.h"
+          },
+          "hashes": {
+            "sha-256": "cbe81f1b79240ed7ae8aa3ff1e96a44105f448938295ce05d923ef01c4edd0a9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/fat_io_lib/fat_opts.h"
+          },
+          "hashes": {
+            "sha-256": "009308c90f59082b07be2dd14ecdab04f0fd3873bc5f0d0721956c163fa526a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/fat_io_lib/fat_types.h"
+          },
+          "hashes": {
+            "sha-256": "65d25a3802e18b9770a26058cf8b51285b6d3b1d69368ded7bd29e489c482857"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/fat_io_lib/fat_access.h"
+          },
+          "hashes": {
+            "sha-256": "15cb7abf47f7bb3b130d1ddcd58132c6d4e76dfd5eebca51a0545b583ea9120a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/fat_io_lib/fat_table.h"
+          },
+          "hashes": {
+            "sha-256": "ce496e825830541283cbe9ff43bc37b9f9f7cca0ee3036380b6098cf76e93be5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/fat_io_lib/fat_misc.h"
+          },
+          "hashes": {
+            "sha-256": "a6de0535a662c3a03be0125bceabf2b0ccc8029f02f6dd21ee2d64bed231c70d"
+          }
+        }
+      ]
+    }
+  ]
+}

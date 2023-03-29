@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31933.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/language.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "1ebd2c25fbf7c8eb4f356e9c904153e0c4f20cfca8e3dc61b58fa3153463c7b7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/ventoy2disk.h"
+          },
+          "hashes": {
+            "sha-256": "5ca7c0997c565d19789f569d0e8709324b85c73afc6449a8a56d3747f31e3eae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/down/ventoy(1)/ventoy2disk/ventoy2disk/language.h"
+          },
+          "hashes": {
+            "sha-256": "cda5b7ba070aa452bf53e32e1b5a9f8601ecf2454924f934711338268547635e"
+          }
+        }
+      ]
+    }
+  ]
+}

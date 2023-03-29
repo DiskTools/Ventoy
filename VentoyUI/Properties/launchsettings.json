@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "VentoyUI (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "VentoyUI (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
