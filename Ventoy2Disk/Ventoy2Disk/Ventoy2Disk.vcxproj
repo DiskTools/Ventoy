@@ -60,7 +60,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -145,7 +145,7 @@
     <EmbedManifest>true</EmbedManifest>
     <IncludePath>$(ProjectDir)\fat_io_lib\;$(ProjectDir)\xz-embedded-20130513\linux\include;$(ProjectDir)\xz-embedded-20130513\linux\include\linux;$(ProjectDir)\xz-embedded-20130513\userspace;$(ProjectDir)\ff14\source;$(IncludePath)</IncludePath>
     <TargetName>Ventoy2Disk_X64</TargetName>
-    <OutDir>E:\Program Files\ventroy\ventoy-1.0.88</OutDir>
+    <OutDir>D:\Program Files\ventoy-1.0.86-windows\ventoy-1.0.86</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -366,6 +366,7 @@
     <ClCompile Include="PartDialog.c" />
     <ClCompile Include="PhyDrive.c" />
     <ClCompile Include="process.c" />
+    <ClCompile Include="test.c" />
     <ClCompile Include="Utility.c" />
     <ClCompile Include="Ventoy2Disk.c" />
     <ClCompile Include="VentoyJson.c" />

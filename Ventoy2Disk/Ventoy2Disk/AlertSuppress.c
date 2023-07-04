@@ -25,6 +25,7 @@
 #include <initguid.h>
 #include <vds.h>
 #include "Ventoy2Disk.h"
+#include "../VentoyCore/pch.h"
 
 
 #define sfree(p) do {if (p != NULL) {free((void*)(p)); p = NULL;}} while(0)

@@ -20,6 +20,7 @@
  */
 #include <Windows.h>
 #include "Ventoy2Disk.h"
+#include "../VentoyCore/pch.h"
 
 void TraceOut(const char *Fmt, ...)
 {

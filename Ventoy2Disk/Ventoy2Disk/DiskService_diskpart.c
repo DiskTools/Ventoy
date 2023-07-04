@@ -25,6 +25,7 @@
 #include <vds.h>
 #include "Ventoy2Disk.h"
 #include "DiskService.h"
+#include "../VentoyCore/pch.h"
 
 STATIC BOOL IsDiskpartExist(void)
 {

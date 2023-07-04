@@ -37,6 +37,7 @@
 #include "fat_string.h"
 #include "fat_misc.h"
 #include "fat_format.h"
+#include "../../VentoyCore/pch.h"
 
 #if FATFS_INC_FORMAT_SUPPORT
 

@@ -11,7 +11,8 @@
 
 #include "ff.h"			/* Obtains integer types */
 #include "diskio.h"		/* Declarations of disk functions */
-#include "../Ventoy2Disk.h"
+#include "../../Ventoy2Disk.h"
+#include "../../VentoyCore/pch.h"
 
 
 /* Definitions of physical drive number for each drive */

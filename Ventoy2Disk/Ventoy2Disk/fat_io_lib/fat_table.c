@@ -33,6 +33,7 @@
 #include "fat_defs.h"
 #include "fat_access.h"
 #include "fat_table.h"
+#include "../../VentoyCore/pch.h"
 
 #ifndef FAT_BUFFERS
     #define FAT_BUFFERS 1

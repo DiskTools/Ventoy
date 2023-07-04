@@ -27,9 +27,10 @@
 #include "resource.h"
 #include "Language.h"
 #include "Ventoy2Disk.h"
-#include "fat_filelib.h"
-#include "ff.h"
+#include "fat_io_lib/fat_filelib.h"
+#include "ff14/source/ff.h"
 #include "DiskService.h"
+#include "../VentoyCore/pch.h"
 
 static int g_backup_bin_index = 0;
 
@@ -2355,8 +2356,8 @@ int PartitionResizeForVentoy(PHY_DRIVE_INFO *pPhyDrive)
 	PhyDrive = pPhyDrive->PhyDrive;
 
 	Log("#### Now Refresh PhyDrive ####");
-	Ventoy2DiskDestroy();
-	Ventoy2DiskInit();
+	ReleasePhyDrivesList();
+	InitPhyDrivesList();
 	
 	pPhyDrive = GetPhyDriveInfoByPhyDrive(PhyDrive);
 	if (pPhyDrive)

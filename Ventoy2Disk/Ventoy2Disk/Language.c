@@ -22,6 +22,7 @@
 #include <versionhelpers.h>
 #include "Ventoy2Disk.h"
 #include "Language.h"
+#include "../VentoyCore/pch.h"
 
 const TCHAR * GetString(enum STR_ID ID)
 {

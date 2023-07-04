@@ -17,7 +17,7 @@
     <LocalDebuggerCommandArguments />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerWorkingDirectory>E:\Program Files\ventroy\ventoy-1.0.88</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory>D:\Program Files\ventoy-1.0.86-windows\ventoy-1.0.86</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerCommandArguments />
   </PropertyGroup>

@@ -28,6 +28,7 @@
 #endif
 
 #include "VentoyJson.h"
+#include "../VentoyCore/pch.h"
 
 static void vtoy_json_free(VTOY_JSON *pstJsonHead)
 {

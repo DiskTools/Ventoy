@@ -6,6 +6,7 @@
 
 #include "ff.h"
 #include <stdlib.h>
+#include "../../../VentoyCore/pch.h"
 
 #if FF_USE_LFN == 3	/* Dynamic memory allocation */
 

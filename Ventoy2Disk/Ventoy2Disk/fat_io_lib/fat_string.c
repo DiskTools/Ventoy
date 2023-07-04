@@ -32,6 +32,7 @@
 #include <string.h>
 #include <assert.h>
 #include "fat_string.h"
+#include "../../VentoyCore/pch.h"
 
 //-----------------------------------------------------------------------------
 // fatfs_total_path_levels: Take a filename and path and count the sub levels

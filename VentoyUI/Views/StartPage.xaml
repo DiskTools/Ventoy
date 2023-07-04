@@ -446,6 +446,14 @@
                         <ToggleSwitch Toggled="LosslessInstallation_Toggled"/>
                 </labs:SettingsCard>
 
+                    <labs:SettingsCard Description="A Little Test"
+                                   Header="测试用"
+                                   x:Name="t114">
+                        <labs:SettingsCard.HeaderIcon>
+                            <FontIcon Glyph="&#xEA0D;" />
+                        </labs:SettingsCard.HeaderIcon>
+                        <Button Click="Button_Click">114514</Button>
+                    </labs:SettingsCard>
             </StackPanel>
         </Grid>
         </ScrollViewer>

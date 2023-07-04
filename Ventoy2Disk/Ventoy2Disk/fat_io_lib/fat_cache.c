@@ -31,6 +31,7 @@
 //-----------------------------------------------------------------------------
 #include <string.h>
 #include "fat_cache.h"
+#include "../../VentoyCore/pch.h"
 
 // Per file cluster chain caching used to improve performance.
 // This does not have to be enabled for architectures with low

@@ -32,6 +32,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "fat_misc.h"
+#include "../../VentoyCore/pch.h"
 
 //-----------------------------------------------------------------------------
 // fatfs_lfn_cache_init: Clear long file name cache

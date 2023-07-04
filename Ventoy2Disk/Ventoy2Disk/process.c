@@ -33,10 +33,11 @@
 #include "resource.h"
 #include "Language.h"
 #include "Ventoy2Disk.h"
-#include "fat_filelib.h"
-#include "ff.h"
+#include "..\Ventoy2Disk\fat_io_lib\fat_filelib.h"
+#include "..\Ventoy2Disk\ff14\source\ff.h"
 #include "process.h"
 #include <Psapi.h>
+#include "../VentoyCore/pch.h"
 
 
 OPENED_LIBRARIES_VARS;

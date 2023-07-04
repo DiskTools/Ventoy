@@ -36,6 +36,7 @@
 #include "fat_write.h"
 #include "fat_string.h"
 #include "fat_misc.h"
+#include "../../VentoyCore/pch.h"
 
 //-----------------------------------------------------------------------------
 // fatfs_init: Load FAT Parameters

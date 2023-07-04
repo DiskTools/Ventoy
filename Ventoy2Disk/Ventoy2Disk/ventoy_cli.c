@@ -8,6 +8,7 @@
 #include "Ventoy2Disk.h"
 #include "DiskService.h"
 #include "VentoyJson.h"
+#include "../VentoyCore/pch.h"
 
 extern void CLISetReserveSpace(int MB);
 

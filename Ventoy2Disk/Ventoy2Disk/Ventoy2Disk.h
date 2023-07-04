@@ -18,10 +18,14 @@
  *
  */
 
+#pragma once
+
 #ifndef __VENTOY2DISK_H__
 #define __VENTOY2DISK_H__
 
 #include <stdio.h>
+#include <Windows.h>
+#define DllImport __declspec(dllexport)
 
 typedef enum VTOY_FS
 {
@@ -84,7 +88,7 @@ typedef enum VTOY_FS
 #define RET_LASTERR (ret ? 0 : LASTERR)
 
 #pragma pack(1)
-typedef struct PART_TABLE
+DllImport typedef struct PART_TABLE
 {
     UINT8  Active; // 0x00  0x80
 
@@ -102,7 +106,7 @@ typedef struct PART_TABLE
     UINT32 SectorCount;
 }PART_TABLE;
 
-typedef struct MBR_HEAD
+DllImport typedef struct MBR_HEAD
 {
     UINT8 BootCode[446];
     PART_TABLE PartTbl[4];
@@ -129,7 +133,7 @@ typedef struct VTOY_GPT_HDR
     UINT8  Reserved2[420];
 }VTOY_GPT_HDR;
 
-typedef struct VTOY_GPT_PART_TBL
+DllImport typedef struct VTOY_GPT_PART_TBL
 {
     GUID   PartType;
     GUID   PartGuid;
@@ -139,7 +143,7 @@ typedef struct VTOY_GPT_PART_TBL
     UINT16 Name[36];
 }VTOY_GPT_PART_TBL;
 
-typedef struct VTOY_GPT_INFO
+DllImport typedef struct VTOY_GPT_INFO
 {
     MBR_HEAD MBR;
     VTOY_GPT_HDR Head;
@@ -162,7 +166,7 @@ typedef struct ventoy_secure_data
 
 #define VENTOY_MAX_PHY_DRIVE  128
 
-typedef struct PHY_DRIVE_INFO
+DllImport typedef struct PHY_DRIVE_INFO
 {
     int Id;
     int PhyDrive;
@@ -251,10 +255,10 @@ int GetPhysicalDriveCount(void);
 int GetAllPhysicalDriveInfo(PHY_DRIVE_INFO *pDriveList, DWORD *pDriveCount);
 int GetPhyDriveByLogicalDrive(int DriveLetter, UINT64*Offset);
 int GetVentoyVerInPhyDrive(const PHY_DRIVE_INFO *pDriveInfo, UINT64 Part2StartSector, CHAR *VerBuf, size_t BufLen, BOOL *pSecureBoot);
-int Ventoy2DiskInit(void);
-int Ventoy2DiskDestroy(void);
-PHY_DRIVE_INFO * GetPhyDriveInfoById(int Id);
-PHY_DRIVE_INFO * GetPhyDriveInfoByPhyDrive(int PhyDrive);
+int DllImport InitPhyDrivesList(void);
+int DllImport ReleasePhyDrivesList(void);
+DllImport PHY_DRIVE_INFO * GetPhyDriveInfoById(int Id);
+DllImport PHY_DRIVE_INFO * GetPhyDriveInfoByPhyDrive(int PhyDrive);
 int ParseCmdLineOption(LPSTR lpCmdLine);
 int InstallVentoy2PhyDrive(PHY_DRIVE_INFO *pPhyDrive, int PartStyle, int TryId);
 int PartitionResizeForVentoy(PHY_DRIVE_INFO *pPhyDrive);
@@ -270,7 +274,7 @@ int INIT unxz(unsigned char *in, int in_size,
     unsigned char *out, int *in_used,
     void(*error)(char *x));
 void disk_io_set_param(HANDLE Handle, UINT64 SectorCount);
-int GetVolumeClusterSize(char Drive);
+int DllImport GetVolumeClusterSize(char Drive);
 
 extern BOOL g_InputYes;
 INT_PTR CALLBACK YesDialogProc(HWND hWnd, UINT Message, WPARAM wParam, LPARAM lParam);
@@ -279,7 +283,7 @@ int GetReservedSpaceInMB(void);
 int IsPartNeed4KBAlign(void);
 int GetVentoyFsType(void);
 void SetVentoyFsType(int fs);
-int GetClusterSize(void);
+int DllImport GetClusterSize(void);
 void SetClusterSize(int ClusterSize);
 WCHAR* GetClusterSizeTip(void);
 void FormatClusterSizeTip(int Size, WCHAR* pBuf, size_t len);
@@ -366,12 +370,22 @@ void VentoyStringToUpper(CHAR* str);
 BOOL AlertSuppressInit(void);
 void SetAlertPromptHookEnable(BOOL enable);
 int VentoyCLIMain(int argc, char** argv);
-BOOL IsVentoyPhyDrive(int PhyDrive, UINT64 SizeBytes, MBR_HEAD* pMBR, UINT64* Part2StartSector, UINT64* GptPart2Attr);
-int GetVentoyFsNameInPhyDrive(PHY_DRIVE_INFO* CurDrive);
+
+BOOL DllImport IsVentoyPhyDrive(int PhyDrive, UINT64 SizeBytes, MBR_HEAD* pMBR, UINT64* Part2StartSector, UINT64* GptPart2Attr);
+int DllImport GetVentoyFsNameInPhyDrive(PHY_DRIVE_INFO* CurDrive);
 void CLISetReserveSpace(int MB);
 void CLI_UpdatePercent(int Pos);
 
 #define VTSI_SUPPORT 1
 
+
+DllImport typedef struct TEST 
+{
+    int tint;
+    byte tuchar;
+    short tshort;
+    char tchar;
+    wchar_t const* tcharlb64[64];
+} TEST;
 
 #endif

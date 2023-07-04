@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ventoy2Disk", "Ventoy2Disk\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lib-Generic-FAT-Filesystem-Module", "Lib-Generic-FAT-Filesystem-Module\Lib-Generic-FAT-Filesystem-Module.vcxproj", "{0B8A94F7-63BD-42BA-AE4B-FC1A390C6320}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendTest", "SendTest\SendTest.csproj", "{5BAB7A81-BD51-4517-A4D7-F2CF5919E774}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendTest", "SendTest\SendTest.csproj", "{5BAB7A81-BD51-4517-A4D7-F2CF5919E774}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

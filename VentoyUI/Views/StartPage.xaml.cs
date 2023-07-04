@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-
+using VentoyUI.Helpers;
 using VentoyUI.ViewModels;
 
 namespace VentoyUI.Views;
@@ -201,7 +201,10 @@ public sealed partial class StartPage : Page
         }
     }
 
-    
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        t114.Header = VentoyCoreLibHelper.Test();
+    }
 }
 
 

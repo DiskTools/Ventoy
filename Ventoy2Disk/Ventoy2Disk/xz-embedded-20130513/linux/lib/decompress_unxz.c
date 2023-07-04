@@ -100,6 +100,7 @@
  * know later if we are being used for kernel decompression, we define
  * XZ_PREBOOT here.
  */
+#include "../../../../VentoyCore/pch.h"
 #ifdef STATIC
 #	define XZ_PREBOOT
 #endif
@@ -109,6 +110,7 @@
 #define XZ_EXTERN STATIC
 
 #ifndef XZ_PREBOOT
+
 #	include <linux/slab.h>
 #	include <linux/xz.h>
 #else

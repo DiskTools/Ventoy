@@ -1,4 +1,5 @@
 #include <Windows.h>
+#include "../VentoyCore/pch.h"
 
 static UINT32  g_CrcTable[256] = {
     0x00000000,
