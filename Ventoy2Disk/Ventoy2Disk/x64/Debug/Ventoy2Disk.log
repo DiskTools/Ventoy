@@ -1,4 +1,0 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(503,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
-  WinDialog.c
-E:\Programming Profiles\Ventoy(1)\Ventoy2Disk\Ventoy2Disk\WinDialog.c(2275,43): warning C4133: “函数”: 从“CHAR [64]”到“LPCWSTR”的类型不兼容
-  Ventoy2Disk.vcxproj -> E:\Program Files\ventroy\ventoy-1.0.88\Ventoy2Disk_X64.exe
